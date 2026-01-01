@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payrium UI Kit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d59f2',
+                        surface: '#ffffff',
+                        background: '#f5f6f8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background min-h-screen py-12 px-4 sm:px-6 lg:px-8 text-slate-900">
+    <div class="max-w-md mx-auto">
+        <div class="text-center mb-8">
+            <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 ring-4 ring-white shadow-sm">
+                <i data-lucide="layers" class="w-10 h-10 text-primary"></i>
+            </div>
+            <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Payrium UI Kit</h1>
+            <p class="text-slate-500 mt-2">Collection of screens and components</p>
+        </div>
+
+        <div class="relative mb-6 group">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <i data-lucide="search" class="h-5 w-5 text-slate-400 group-focus-within:text-primary transition-colors"></i>
+            </div>
+            <input type="text" id="search" 
+                class="block w-full pl-10 pr-3 py-3 border border-slate-200 rounded-xl leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary sm:text-sm transition-all shadow-sm hover:border-slate-300" 
+                placeholder="Search screens...">
+        </div>
+
+        <div class="space-y-3" id="links-container">            <a href="about_payrium_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">About Payrium Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">about_payrium_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="create_wallet__confirm_phrase.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Create Wallet: Confirm Phrase</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">create_wallet__confirm_phrase.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="create_wallet__display_phrase.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Create Wallet: Display Phrase</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">create_wallet__display_phrase.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="create_wallet__recovery_info.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Create Wallet: Recovery Info</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">create_wallet__recovery_info.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="dao_governance_preview_1.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">DAO Governance Preview 1</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">dao_governance_preview_1.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="dao_governance_preview_2.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">DAO Governance Preview 2</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">dao_governance_preview_2.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="get_started.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Get Started</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">get_started.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="import_wallet__input_phrase_1.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Import Wallet: Input Phrase 1</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">import_wallet__input_phrase_1.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="import_wallet__input_phrase_2.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Import Wallet: Input Phrase 2</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">import_wallet__input_phrase_2.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="import_wallet__options.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Import Wallet: Options</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">import_wallet__options.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="import_wallet__success.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Import Wallet: Success</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">import_wallet__success.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="onboarding__community_governed.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Onboarding: Community Governed</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">onboarding__community_governed.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="onboarding__easy_payments.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Onboarding: Easy Payments</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">onboarding__easy_payments.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="onboarding__multi-network_wallet.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Onboarding: Multi-Network Wallet</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">onboarding__multi-network_wallet.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="payrium_splash_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Payrium Splash Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">payrium_splash_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="portfolio_home_screen_1.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Portfolio Home Screen 1</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">portfolio_home_screen_1.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="portfolio_home_screen_2.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Portfolio Home Screen 2</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">portfolio_home_screen_2.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="pum_token_info_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">PUM Token Info Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">pum_token_info_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="receive_token_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Receive Token Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">receive_token_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="security_settings.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Security Settings</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">security_settings.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="send__enter_recipient_address.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Send: Enter Recipient Address</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">send__enter_recipient_address.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="send__review_transaction.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Send: Review Transaction</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">send__review_transaction.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="send__select_token_&_amount.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Send: Select Token & Amount</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">send__select_token_&_amount.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="send__success_confirmation.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Send: Success Confirmation</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">send__success_confirmation.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="settings_home.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Settings Home</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">settings_home.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="swap__preview_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Swap: Preview Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">swap__preview_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="swap__setup_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Swap: Setup Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">swap__setup_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="swap__success_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Swap: Success Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">swap__success_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="token_detail_screen.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Token Detail Screen</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">token_detail_screen.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="wallet_created_success.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Wallet Created Success</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">wallet_created_success.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>            <a href="wallet_settings.html" target="_blank" class="screen-link group block w-full bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-4 transition-all hover:shadow-md hover:border-primary/30 hover:-translate-y-0.5">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+                            <i data-lucide="layout" class="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        </div>
+                        <div class="flex flex-col text-left overflow-hidden">
+                            <span class="font-medium text-slate-900 group-hover:text-primary transition-colors truncate">Wallet Settings</span>
+                            <span class="text-xs text-slate-400 font-mono truncate">wallet_settings.html</span>
+                        </div>
+                    </div>
+                    <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-primary transition-colors shrink-0"></i>
+                </div>
+            </a>        </div>
+        
+        <footer class="mt-12 text-center text-sm text-slate-400">
+            <p>&copy; 2024 Payrium UI</p>
+        </footer>
+    </div>
+
+    <script>
+        // Icon initialization
+        lucide.createIcons();
+
+        // Search functionality
+        const searchInput = document.getElementById('search');
+        const linksContainer = document.getElementById('links-container');
+        const links = linksContainer.getElementsByClassName('screen-link');
+
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            Array.from(links).forEach(link => {
+                const text = link.innerText.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    link.style.display = 'block';
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
