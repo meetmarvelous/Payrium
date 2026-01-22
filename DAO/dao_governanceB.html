@@ -98,13 +98,13 @@
         <!-- Navigation Links -->
         <nav class="flex flex-col gap-1">
           <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
-            href="#">
+            href="../Dashboard/Dashboard MO.html">
             <span
               class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-hover:text-primary">dashboard</span>
             <p class="text-sm font-medium leading-normal">Dashboard</p>
           </a>
           <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
-            href="#">
+            href="../Dashboard/activity.html">
             <span
               class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-hover:text-primary">receipt_long</span>
             <p class="text-sm font-medium leading-normal">Activity</p>
@@ -115,7 +115,7 @@
           </a>
           <div class="pt-4 mt-2 border-t border-slate-100 dark:border-slate-800">
             <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
-              href="#">
+              href="../Settings/settings_home.html">
               <span
                 class="material-symbols-outlined text-slate-500 dark:text-slate-400 group-hover:text-primary">settings</span>
               <p class="text-sm font-medium leading-normal">Settings</p>
@@ -163,120 +163,128 @@
             <span class="material-symbols-outlined">notifications</span>
           </button>
         </header>
+
+        <!-- Main Content -->
         <div class="flex-1 flex flex-col px-5 py-6 gap-6 overflow-y-auto hide-scrollbar pb-24 md:pb-8">
-          <div class="flex flex-col items-center gap-5">
-            <div
-              class="inline-flex h-8 items-center justify-center gap-x-2 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 px-4">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-              </span>
-              <p class="text-primary text-xs font-semibold uppercase tracking-wide">Coming Soon to BSC</p>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-white dark:bg-slate-800 p-3 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                   <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Active Votes</div>
+                   <div class="text-2xl font-bold text-slate-900 dark:text-white">3</div>
+                </div>
+                 <div class="bg-white dark:bg-slate-800 p-3 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                   <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Passed</div>
+                   <div class="text-2xl font-bold text-slate-900 dark:text-white">12</div>
+                </div>
             </div>
-            <div
-              class="w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-800 relative group">
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-dark via-transparent to-transparent opacity-60 z-10">
-              </div>
-              <div
-                class="w-full h-full bg-center bg-no-repeat bg-cover transform transition-transform duration-700 group-hover:scale-105"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8H4TPaToxTndwPbVR3XbuQ_4OHAxg9xkne1fxz4XAXETFveAb33VAZmRp2H22shf53NxhTOnH6eA3GOQ86uZrP6_f7IkAYSDAC_EHiLqwsUUki2L1X1KrfgwNEtEAfEiXnkyWGRziP66gAwShBFgXyRP_vpJO4nNwIiGEEnJk6Laq9qcJiGI80QHYEuCWcBqZyZMj1UGgK6hFidfW8pSb2cjkuCi0UxycrqlnSifvSQT1Qm6-BEgwsdK7O1iH8B-Ynyc7pE6beyzx");'>
-              </div>
-            </div>
-            <div class="text-center space-y-2">
-              <h1 class="text-text-main dark:text-white text-2xl font-bold leading-tight tracking-tight">Community
-                Governance</h1>
-              <p class="text-text-muted dark:text-slate-400 text-sm font-normal leading-relaxed px-2">
-                Shape the future of Payrium. Vote on proposals and manage the ecosystem treasury directly from your
-                wallet.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col gap-3">
-            <a href="proposal_detail.html"
-              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-blue-100 dark:hover:border-blue-800 hover:shadow-md transition-all">
-              <div
-                class="flex items-center justify-center size-10 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary shrink-0">
-                <span class="material-symbols-outlined text-[20px]">how_to_vote</span>
-              </div>
-              <div class="flex flex-col">
-                <h3 class="text-text-main dark:text-white text-sm font-semibold">Vote on Proposals</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs">Use your tokens to influence decisions</p>
-              </div>
-            </a>
-            <div
-              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-blue-100 dark:hover:border-blue-800 hover:shadow-md transition-all">
-              <div
-                class="flex items-center justify-center size-10 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary shrink-0">
-                <span class="material-symbols-outlined text-[20px]">account_balance</span>
-              </div>
-              <div class="flex flex-col">
-                <h3 class="text-text-main dark:text-white text-sm font-semibold">Track Treasury Funds</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs">Transparent on-chain fund management</p>
-              </div>
-            </div>
-            <div
-              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-blue-100 dark:hover:border-blue-800 hover:shadow-md transition-all">
-              <div
-                class="flex items-center justify-center size-10 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary shrink-0">
-                <span class="material-symbols-outlined text-[20px]">token</span>
-              </div>
-              <div class="flex flex-col">
-                <h3 class="text-text-main dark:text-white text-sm font-semibold">Earn Governance Rewards</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs">Get rewarded for active participation</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-2 pt-6 border-t border-gray-100 dark:border-slate-800">
-            <div class="flex flex-col gap-3">
-              <label class="text-sm font-semibold text-text-main dark:text-white" for="email">Get notified when
-                governance goes live</label>
-              <div class="flex flex-col gap-3">
-                <input
-                  class="w-full bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-text-main dark:text-white text-sm rounded-lg focus:bg-white dark:focus:bg-slate-700 focus:ring-2 focus:ring-primary/20 focus:border-primary placeholder-slate-400 p-3 outline-none transition-all"
-                  id="email" placeholder="Enter your email" type="email" />
-                <button
-                  class="w-full bg-primary hover:bg-blue-600 shadow-lg shadow-blue-500/20 text-white font-semibold py-3 px-4 rounded-lg transition-all flex items-center justify-center gap-2">
-                  <span>Join Waitlist</span>
-                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center justify-center gap-2 py-2 opacity-70">
-            <span class="text-xs text-slate-400">Powered by</span>
-            <div class="flex items-center gap-1">
-              <div class="size-4 rounded-full bg-[#F0B90B] flex items-center justify-center">
-                <span class="text-[8px] text-black font-bold">B</span>
-              </div>
-              <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">BSC</span>
-            </div>
-          </div>
+
+            <!-- Proposals List -->
+             <div class="flex flex-col gap-4">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">Proposals</h3>
+                     <span class="text-xs font-semibold px-2 py-1 bg-primary text-white rounded">Active</span>
+                </div>
+
+                <!-- Active Proposal 1 -->
+                <a href="proposal_detail.html" class="flex flex-col gap-3 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-2">
+                             <span class="text-xs font-bold text-slate-500">#042</span>
+                             <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Active</span>
+                        </div>
+                        <span class="text-xs text-slate-500">2 days left</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-1">SIP-12: Add New Staking Pools</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">Liquidity mining rewards for USDC-BNB pairs.</p>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-700 rounded-full h-1.5 overflow-hidden flex">
+                        <div class="bg-green-500 h-full" style="width: 75%"></div>
+                        <div class="bg-red-500 h-full" style="width: 15%"></div>
+                         <div class="bg-slate-300 h-full" style="width: 10%"></div>
+                    </div>
+                </a>
+
+                 <!-- Active Proposal 2 -->
+                <a href="proposal_detail.html" class="flex flex-col gap-3 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-2">
+                             <span class="text-xs font-bold text-slate-500">#041</span>
+                             <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Active</span>
+                        </div>
+                        <span class="text-xs text-slate-500">5 hours left</span>
+                    </div>
+                     <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-1">SIP-11: Burn 5% Treasury</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">Deflationary measure to reduce total supply.</p>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-700 rounded-full h-1.5 overflow-hidden flex">
+                        <div class="bg-green-500 h-full" style="width: 45%"></div>
+                        <div class="bg-red-500 h-full" style="width: 40%"></div>
+                         <div class="bg-slate-300 h-full" style="width: 15%"></div>
+                    </div>
+                </a>
+
+                <!-- Closed Proposal -->
+                <a href="proposal_detail.html" class="flex flex-col gap-3 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 shadow-sm opacity-80 hover:opacity-100 transition-all">
+                     <div class="flex justify-between items-start">
+                        <div class="flex items-center gap-2">
+                             <span class="text-xs font-bold text-slate-500">#040</span>
+                             <span class="bg-purple-100 text-purple-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Executed</span>
+                        </div>
+                        <span class="text-xs text-slate-500">Ended 3d ago</span>
+                    </div>
+                     <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm mb-1">SIP-10: Update Fee Structure</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">Adjust swap fee distribution.</p>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-700 rounded-full h-1.5 overflow-hidden flex">
+                        <div class="bg-purple-500 h-full" style="width: 90%"></div>
+                         <div class="bg-slate-300 h-full" style="width: 10%"></div>
+                    </div>
+                </a>
+             </div>
+
+             <!-- Powered By  -->
+             <div class="flex items-center justify-center gap-2 py-4 opacity-70 mt-auto">
+                <span class="text-xs text-slate-400">Powered by</span>
+                <div class="flex items-center gap-1">
+                  <div class="size-4 rounded-full bg-[#F0B90B] flex items-center justify-center">
+                    <span class="text-[8px] text-black font-bold">B</span>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">BSC</span>
+                </div>
+             </div>
+
         </div>
 
         <!-- Bottom Navigation (Mobile only) -->
         <nav
           class="md:hidden bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-slate-800 px-6 py-3 pb-6 flex justify-between items-center shrink-0">
-          <button
+          <a
+            href="../Dashboard/Dashboard MO.html"
             class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
             <span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
             <span class="text-[10px] font-medium">Dashboard</span>
-          </button>
-          <button
+          </a>
+          <a
+            href="../Dashboard/activity.html"
             class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
             <span class="material-symbols-outlined group-hover:scale-110 transition-transform">receipt_long</span>
             <span class="text-[10px] font-medium">Activity</span>
-          </button>
-          <button class="flex flex-col items-center gap-1 text-primary w-14 relative">
+          </a>
+          <a href="dao_governance.html" class="flex flex-col items-center gap-1 text-primary w-14 relative">
             <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full"></div>
             <span class="material-symbols-outlined filled animate-pulse-once">how_to_vote</span>
             <span class="text-[10px] font-bold">DAO</span>
-          </button>
-          <button
+          </a>
+          <a
+            href="../Settings/settings_home.html"
             class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
             <span class="material-symbols-outlined group-hover:scale-110 transition-transform">settings</span>
             <span class="text-[10px] font-medium">Settings</span>
-          </button>
+          </a>
         </nav>
       </div>
 
