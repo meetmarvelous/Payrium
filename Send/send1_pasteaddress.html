@@ -147,128 +147,137 @@
 
             <!-- Scrollable Content -->
             <div class="flex-1 overflow-y-auto no-scrollbar pb-24 md:pb-8">
-                <div class="max-w-lg mx-auto px-5 py-6">
+                <div class="max-w-lg md:max-w-5xl mx-auto px-5 py-6 h-full">
+                    
+                    <div class="md:grid md:grid-cols-2 md:gap-12 md:h-full">
+                        <!-- Left Column: Input and Actions -->
+                        <div class="flex flex-col">
+                            <!-- Recipient Input Section -->
+                            <div class="pt-2 pb-6">
+                                <label class="block text-slate-500 dark:text-slate-400 text-sm font-medium mb-3 pl-1">To</label>
+                                <div class="relative group">
+                                    <div
+                                        class="flex items-center w-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl border-2 border-transparent focus-within:border-primary transition-all duration-200 overflow-hidden">
+                                        <span class="material-symbols-outlined text-slate-400 ml-4 text-[20px]">search</span>
+                                        <input
+                                            class="w-full bg-transparent border-none placeholder:text-slate-400 text-base font-normal py-4 pl-3 pr-12 focus:ring-0"
+                                            placeholder="Name, @username, or address" type="text" value="" />
+                                        <button
+                                            class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-xl text-primary hover:bg-primary/10 transition-colors">
+                                            <span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-2 px-1">
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">BSC Network (BEP-20)</p>
+                                    <button class="text-xs font-semibold text-primary hover:text-blue-700">Paste</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Proceed Button -->
+                            <div class="pb-6">
+                                <a href="send2_inputamount.html" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98]">
+                                    Proceed
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </div>
 
-                    <!-- Recipient Input Section -->
-                    <div class="pt-2 pb-6">
-                        <label class="block text-slate-500 dark:text-slate-400 text-sm font-medium mb-3 pl-1">To</label>
-                        <div class="relative group">
-                            <div
-                                class="flex items-center w-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl border-2 border-transparent focus-within:border-primary transition-all duration-200 overflow-hidden">
-                                <span class="material-symbols-outlined text-slate-400 ml-4 text-[20px]">search</span>
-                                <input
-                                    class="w-full bg-transparent border-none placeholder:text-slate-400 text-base font-normal py-4 pl-3 pr-12 focus:ring-0"
-                                    placeholder="Name, @username, or address" type="text" value="" />
+                            <!-- Quick Actions -->
+                            <div class="pb-6">
+                                <div class="flex gap-3">
+                                    <button
+                                        class="flex-1 flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <span class="material-symbols-outlined">content_paste</span>
+                                        </div>
+                                        <span class="text-sm font-medium">Paste Address</span>
+                                    </button>
+                                    <button
+                                        class="flex-1 flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                            <span class="material-symbols-outlined">alternate_email</span>
+                                        </div>
+                                        <span class="text-sm font-medium">Domain Name</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Contacts and Accounts -->
+                        <div class="flex flex-col gap-6 md:pl-8 md:border-l md:border-slate-100 md:dark:border-slate-800">
+                             <!-- Recent Contacts -->
+                            <div>
+                                <h3 class="text-lg font-bold mb-4">Recent Contacts</h3>
+                                <div class="flex flex-col gap-1">
+                                    <button
+                                        class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
+                                        <div class="relative">
+                                            <img alt="Alice Avatar"
+                                                class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 object-cover"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-cilukNl8WrxcBfaUg4pGqljQM8dVxmNQDWQs6QUAYWpLvEHYqnaBV9UAoQ7thHe2zpU--0zV33D9EuYeilsoxt0rJTkFlE_Hw871Y6eMHoU2MZD6iTBLf7rdC6eUFTEiLgtCL9nnpf4jLBIw3A1Ks5lQ1V9_vZyFaNz3s3bRk2zNBKKitRo8lUb2xZMD7OX609u3OSN6RMhzXSmUpqKxyQ4JGcu3IErQfCBUbfpSsDWSR7AeA-56m4vnFWfaWyZjFta6Dk_ZuEN" />
+                                            <div
+                                                class="absolute -bottom-0.5 -right-0.5 w-5 h-5 bg-white dark:bg-surface-dark rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700">
+                                                <span class="material-symbols-outlined text-[12px] text-green-500">bolt</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="font-medium text-base truncate">Alice Wonderland</h4>
+                                            <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0x8A2...F3B1 • Last sent
+                                                yesterday</p>
+                                        </div>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+                                    </button>
+                                    <button
+                                        class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
+                                        <div
+                                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
+                                            DT</div>
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="font-medium text-base truncate">DAO Treasury</h4>
+                                            <p class="text-slate-500 dark:text-slate-400 text-xs truncate">8x3P...9jK2 •
+                                                Governance</p>
+                                        </div>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+                                    </button>
+                                    <button
+                                        class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
+                                        <img alt="Bob Avatar"
+                                            class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 object-cover"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0F5uUQWlUs00glXOIspH929wrNswEblMdLVTVJZ88bvR_rS7LsCIvcMYZTHkVQvM7MDvBgTGaraf19LuZSRCTlvdL8jBWDm8vzcMrHxuCQuO5Qik2VCP-LnPitkDdgjQJDaycFyYCyNrrJuRTbzCVfyupgnx26Li8GEWOkqhcGd6fWUxfz3Bx0ZDr70wVsESGRsxhLUHUVzftGLgOhlvoo8yKoMosYdBZ9KuBZ5imw7aU7mQZgXLdRPS2do9QD0g8qi5xRaRWkxem" />
+                                        <div class="flex-1 min-w-0">
+                                            <h4 class="font-medium text-base truncate">Bob Builder</h4>
+                                            <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0x5B1...8K92 • Last sent 3
+                                                days ago</p>
+                                        </div>
+                                        <span
+                                            class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Your Accounts -->
+                            <div class="pt-6 md:pt-0">
+                                <h3 class="text-lg font-bold mb-4">Your Accounts</h3>
                                 <button
-                                    class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-xl text-primary hover:bg-primary/10 transition-colors">
-                                    <span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+                                    class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left w-full">
+                                    <div
+                                        class="relative w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700">
+                                        <span class="material-symbols-outlined text-slate-500">account_balance_wallet</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="font-medium text-base truncate">Wallet 2 (Savings)</h4>
+                                        <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0.5 BNB • 0x4kL...mP21</p>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
                                 </button>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center mt-2 px-1">
-                            <p class="text-xs text-slate-500 dark:text-slate-400">BSC Network (BEP-20)</p>
-                            <button class="text-xs font-semibold text-primary hover:text-blue-700">Paste</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Proceed Button -->
-                    <div class="pb-6">
-                        <a href="send2_inputamount.html" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98]">
-                            Proceed
-                            <span class="material-symbols-outlined">arrow_forward</span>
-                        </a>
-                    </div>
 
-                    <!-- Quick Actions -->
-                    <div class="pb-6">
-                        <div class="flex gap-3">
-                            <button
-                                class="flex-1 flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                    <span class="material-symbols-outlined">content_paste</span>
-                                </div>
-                                <span class="text-sm font-medium">Paste Address</span>
-                            </button>
-                            <button
-                                class="flex-1 flex flex-col items-center gap-2 p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                    <span class="material-symbols-outlined">alternate_email</span>
-                                </div>
-                                <span class="text-sm font-medium">Domain Name</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Recent Contacts -->
-                    <div>
-                        <h3 class="text-lg font-bold mb-4">Recent Contacts</h3>
-                        <div class="flex flex-col gap-1">
-                            <button
-                                class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
-                                <div class="relative">
-                                    <img alt="Alice Avatar"
-                                        class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 object-cover"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-cilukNl8WrxcBfaUg4pGqljQM8dVxmNQDWQs6QUAYWpLvEHYqnaBV9UAoQ7thHe2zpU--0zV33D9EuYeilsoxt0rJTkFlE_Hw871Y6eMHoU2MZD6iTBLf7rdC6eUFTEiLgtCL9nnpf4jLBIw3A1Ks5lQ1V9_vZyFaNz3s3bRk2zNBKKitRo8lUb2xZMD7OX609u3OSN6RMhzXSmUpqKxyQ4JGcu3IErQfCBUbfpSsDWSR7AeA-56m4vnFWfaWyZjFta6Dk_ZuEN" />
-                                    <div
-                                        class="absolute -bottom-0.5 -right-0.5 w-5 h-5 bg-white dark:bg-surface-dark rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700">
-                                        <span class="material-symbols-outlined text-[12px] text-green-500">bolt</span>
-                                    </div>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="font-medium text-base truncate">Alice Wonderland</h4>
-                                    <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0x8A2...F3B1 • Last sent
-                                        yesterday</p>
-                                </div>
-                                <span
-                                    class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
-                            </button>
-                            <button
-                                class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
-                                    DT</div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="font-medium text-base truncate">DAO Treasury</h4>
-                                    <p class="text-slate-500 dark:text-slate-400 text-xs truncate">8x3P...9jK2 •
-                                        Governance</p>
-                                </div>
-                                <span
-                                    class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
-                            </button>
-                            <button
-                                class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left">
-                                <img alt="Bob Avatar"
-                                    class="w-12 h-12 rounded-full border border-slate-200 dark:border-slate-700 object-cover"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0F5uUQWlUs00glXOIspH929wrNswEblMdLVTVJZ88bvR_rS7LsCIvcMYZTHkVQvM7MDvBgTGaraf19LuZSRCTlvdL8jBWDm8vzcMrHxuCQuO5Qik2VCP-LnPitkDdgjQJDaycFyYCyNrrJuRTbzCVfyupgnx26Li8GEWOkqhcGd6fWUxfz3Bx0ZDr70wVsESGRsxhLUHUVzftGLgOhlvoo8yKoMosYdBZ9KuBZ5imw7aU7mQZgXLdRPS2do9QD0g8qi5xRaRWkxem" />
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="font-medium text-base truncate">Bob Builder</h4>
-                                    <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0x5B1...8K92 • Last sent 3
-                                        days ago</p>
-                                </div>
-                                <span
-                                    class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Your Accounts -->
-                    <div class="pt-6">
-                        <h3 class="text-lg font-bold mb-4">Your Accounts</h3>
-                        <button
-                            class="flex items-center gap-4 p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group text-left w-full">
-                            <div
-                                class="relative w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700">
-                                <span class="material-symbols-outlined text-slate-500">account_balance_wallet</span>
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <h4 class="font-medium text-base truncate">Wallet 2 (Savings)</h4>
-                                <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0.5 BNB • 0x4kL...mP21</p>
-                            </div>
-                            <span
-                                class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors">chevron_right</span>
-                        </button>
                     </div>
                 </div>
             </div>

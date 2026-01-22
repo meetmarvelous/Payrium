@@ -50,7 +50,7 @@
 </head>
 
 <body
-  class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen overflow-hidden h-screen-safe">
+  class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen overflow-hidden h-screen-safe md:h-screen md:overflow-hidden">
 
   <div class="flex h-screen w-full">
 
@@ -141,108 +141,114 @@
 
       <!-- Scrollable Content -->
       <div class="flex-1 overflow-y-auto pb-24 md:pb-8">
-        <div class="max-w-md mx-auto px-5 py-6">
+        <div class="max-w-md md:max-w-5xl md:grid md:grid-cols-2 md:gap-16 md:items-center mx-auto px-5 py-6 h-full">
 
-          <!-- Amount Display -->
-          <div class="flex flex-col items-center justify-center py-8">
-            <div class="bg-primary/10 rounded-full p-4 mb-4">
-              <span class="material-symbols-outlined text-primary text-[32px]">arrow_upward</span>
+          <!-- Col 1: Amount & Recipient -->
+          <div class="flex flex-col md:justify-center">
+            <!-- Amount Display -->
+            <div class="flex flex-col items-center justify-center py-8">
+              <div class="bg-primary/10 rounded-full p-4 mb-4">
+                <span class="material-symbols-outlined text-primary text-[32px]">arrow_upward</span>
+              </div>
+              <h1 class="tracking-tight text-4xl font-bold leading-tight text-center">50.00 SOL</h1>
+              <p class="text-slate-500 dark:text-gray-400 text-base font-normal leading-normal pt-1 text-center">•
+                $1,250.45 USD</p>
             </div>
-            <h1 class="tracking-tight text-4xl font-bold leading-tight text-center">50.00 SOL</h1>
-            <p class="text-slate-500 dark:text-gray-400 text-base font-normal leading-normal pt-1 text-center">•
-              $1,250.45 USD</p>
-          </div>
 
-          <!-- Recipient Card -->
-          <div>
-            <p class="text-sm font-medium text-slate-500 dark:text-gray-400 mb-2 uppercase tracking-wide text-xs">
-              Recipient</p>
-            <div
-              class="flex items-center gap-4 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-4 py-3 rounded-xl justify-between">
-              <div class="flex items-center gap-3">
-                <div class="bg-center bg-no-repeat bg-cover rounded-full h-10 w-10 shrink-0 shadow-sm"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVVQzPOwfDJ4RmlY0l2vp_QCOGlJAcm5zO38WomvKV9rdmQsfdP4FRoim-crz-n6gjt90Ln7E1ER3Inr23oXslQC9KNqyLEb-VaBEFGNV-_DXV1mel5qG5sPHhBXvUgnRNJJZiW0NNmz0xOIfalQa7ZKtCD82FUAjcIM1J6CehbDN1QIDBLEOtyHESxXWl7gVWbH4kV8Em37ZfjShaye_OssAp6vW9R79JwHXl_KFaQ6BJS4ihtx_lhUZQWmGfQFrY0k86ZNjWV7E6");'>
+            <!-- Recipient Card -->
+            <div>
+              <p class="text-sm font-medium text-slate-500 dark:text-gray-400 mb-2 uppercase tracking-wide text-xs">
+                Recipient</p>
+              <div
+                class="flex items-center gap-4 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-4 py-3 rounded-xl justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="bg-center bg-no-repeat bg-cover rounded-full h-10 w-10 shrink-0 shadow-sm"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVVQzPOwfDJ4RmlY0l2vp_QCOGlJAcm5zO38WomvKV9rdmQsfdP4FRoim-crz-n6gjt90Ln7E1ER3Inr23oXslQC9KNqyLEb-VaBEFGNV-_DXV1mel5qG5sPHhBXvUgnRNJJZiW0NNmz0xOIfalQa7ZKtCD82FUAjcIM1J6CehbDN1QIDBLEOtyHESxXWl7gVWbH4kV8Em37ZfjShaye_OssAp6vW9R79JwHXl_KFaQ6BJS4ihtx_lhUZQWmGfQFrY0k86ZNjWV7E6");'>
+                  </div>
+                  <div class="flex flex-col justify-center">
+                    <p class="text-base font-medium leading-tight line-clamp-1">payrium.sol</p>
+                    <p class="text-slate-500 dark:text-gray-400 text-xs font-normal leading-normal line-clamp-1">
+                      0x12ab...890f</p>
+                  </div>
                 </div>
-                <div class="flex flex-col justify-center">
-                  <p class="text-base font-medium leading-tight line-clamp-1">payrium.sol</p>
-                  <p class="text-slate-500 dark:text-gray-400 text-xs font-normal leading-normal line-clamp-1">
-                    0x12ab...890f</p>
+                <div class="shrink-0 text-green-500 bg-green-500/10 rounded-full p-1">
+                  <span class="material-symbols-outlined text-[20px] flex items-center justify-center">check</span>
                 </div>
-              </div>
-              <div class="shrink-0 text-green-500 bg-green-500/10 rounded-full p-1">
-                <span class="material-symbols-outlined text-[20px] flex items-center justify-center">check</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Transaction Details -->
-          <div class="mt-6">
-            <p class="text-sm font-medium text-slate-500 dark:text-gray-400 mb-2 uppercase tracking-wide text-xs">
-              Details</p>
-            <div
-              class="bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden divide-y divide-slate-100 dark:divide-slate-700">
-              <div class="flex justify-between items-center gap-x-6 px-4 py-3">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-slate-500 text-[18px]">dns</span>
-                  <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Network</p>
-                </div>
-                <p class="text-sm font-medium text-right flex items-center gap-1">
-                  <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                  Solana Mainnet
-                </p>
-              </div>
-              <div class="flex justify-between items-center gap-x-6 px-4 py-3">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-slate-500 text-[18px]">timer</span>
-                  <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Estimated Time</p>
-                </div>
-                <p class="text-sm font-medium text-right">&lt; 30 seconds</p>
-              </div>
-              <div class="flex justify-between items-center gap-x-6 px-4 py-3">
-                <div class="flex items-center gap-2">
-                  <span class="material-symbols-outlined text-slate-500 text-[18px]">local_gas_station</span>
-                  <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Network Fee</p>
-                </div>
-                <p class="text-sm font-medium text-right">0.000005 SOL <span
-                    class="text-slate-500 font-normal">(&lt;$0.01)</span></p>
               </div>
             </div>
           </div>
 
-          <!-- Total Summary -->
-          <div class="mt-6 mb-4">
-            <div class="flex justify-between items-end border-t border-slate-200 dark:border-slate-700 pt-4">
-              <p class="text-lg font-bold">Total</p>
-              <div class="text-right">
-                <p class="text-primary text-xl font-bold">50.000005 SOL</p>
-                <p class="text-slate-500 text-xs">≈ $1,250.46 USD</p>
+          <!-- Col 2: Details & Actions -->
+          <div class="flex flex-col mt-6 md:mt-0">
+             <!-- Transaction Details -->
+            <div>
+              <p class="text-sm font-medium text-slate-500 dark:text-gray-400 mb-2 uppercase tracking-wide text-xs">
+                Details</p>
+              <div
+                class="bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden divide-y divide-slate-100 dark:divide-slate-700">
+                <div class="flex justify-between items-center gap-x-6 px-4 py-3">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-slate-500 text-[18px]">dns</span>
+                    <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Network</p>
+                  </div>
+                  <p class="text-sm font-medium text-right flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                    Solana Mainnet
+                  </p>
+                </div>
+                <div class="flex justify-between items-center gap-x-6 px-4 py-3">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-slate-500 text-[18px]">timer</span>
+                    <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Estimated Time</p>
+                  </div>
+                  <p class="text-sm font-medium text-right">&lt; 30 seconds</p>
+                </div>
+                <div class="flex justify-between items-center gap-x-6 px-4 py-3">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-slate-500 text-[18px]">local_gas_station</span>
+                    <p class="text-slate-500 dark:text-gray-400 text-sm font-normal">Network Fee</p>
+                  </div>
+                  <p class="text-sm font-medium text-right">0.000005 SOL <span
+                      class="text-slate-500 font-normal">(&lt;$0.01)</span></p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Action Buttons -->
-          <div class="mt-6">
-            <a href="javascript:void(0)" onclick="confirmTransaction(this)"
-              class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98]">
-              <span class="material-symbols-outlined">send</span>
-              <span class="btn-text">Confirm and Send</span>
-            </a>
-            <script>
-              function confirmTransaction(btn) {
-                // Simulate processing
-                btn.classList.add('opacity-75', 'cursor-wait');
-                const originalText = btn.querySelector('.btn-text').innerText;
-                btn.querySelector('.btn-text').innerText = 'Processing...';
-                
-                setTimeout(() => {
-                  window.location.href = 'send4_success.html';
-                }, 1500);
-              }
-            </script>
-            <a href="send2_inputamount.html"
-              class="w-full mt-3 text-slate-500 dark:text-gray-400 font-medium text-sm py-2 hover:text-slate-900 dark:hover:text-white transition-colors flex justify-center">
-              Edit Transaction
-            </a>
+            <!-- Total Summary -->
+            <div class="mt-6 mb-4">
+              <div class="flex justify-between items-end border-t border-slate-200 dark:border-slate-700 pt-4">
+                <p class="text-lg font-bold">Total</p>
+                <div class="text-right">
+                  <p class="text-primary text-xl font-bold">50.000005 SOL</p>
+                  <p class="text-slate-500 text-xs">≈ $1,250.46 USD</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-2">
+              <a href="javascript:void(0)" onclick="confirmTransaction(this)"
+                class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98]">
+                <span class="material-symbols-outlined">send</span>
+                <span class="btn-text">Confirm and Send</span>
+              </a>
+              <script>
+                function confirmTransaction(btn) {
+                  // Simulate processing
+                  btn.classList.add('opacity-75', 'cursor-wait');
+                  const originalText = btn.querySelector('.btn-text').innerText;
+                  btn.querySelector('.btn-text').innerText = 'Processing...';
+                  
+                  setTimeout(() => {
+                    window.location.href = 'send4_success.html';
+                  }, 1500);
+                }
+              </script>
+              <a href="send2_inputamount.html"
+                class="w-full mt-3 text-slate-500 dark:text-gray-400 font-medium text-sm py-2 hover:text-slate-900 dark:hover:text-white transition-colors flex justify-center">
+                Edit Transaction
+              </a>
+            </div>
           </div>
 
         </div>
