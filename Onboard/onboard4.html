@@ -54,7 +54,7 @@
 </head>
 
 <body
-    class="bg-white md:bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased transition-colors duration-200 min-h-screen flex flex-col overflow-x-hidden">
+    class="bg-white md:bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased transition-colors duration-200 h-screen-safe min-h-screen flex flex-col overflow-x-hidden md:h-screen md:overflow-hidden">
     <header
         class="flex-none w-full flex items-center justify-between border-b border-slate-100 dark:border-slate-800 bg-white dark:bg-[#101622] px-6 py-4 z-50">
         <div class="flex items-center gap-3">
@@ -68,7 +68,7 @@
                 href="#">Skip</a>
         </div>
     </header>
-    <main class="flex flex-1 flex-col md:items-center md:justify-center p-0 md:p-8">
+    <main class="flex flex-1 flex-col md:items-center md:justify-center p-0 md:p-8 overflow-y-auto">
         <div
             class="flex w-full h-full md:h-auto md:min-h-[600px] max-w-5xl flex-col overflow-hidden bg-white dark:bg-[#151c2a] md:rounded-3xl shadow-none md:shadow-xl md:shadow-slate-200/50 dark:shadow-none md:flex-row">
             <div
