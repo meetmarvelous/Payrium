@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Payrium - Export Recovery Phrase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1a2233",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        @supports (height: 100dvh) {
+            .h-screen-safe { height: 100dvh !important; }
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    </style>
+</head>
+
+<body class="flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden h-screen-safe">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark px-4 py-4">
+        <div class="flex items-center gap-3">
+            <a href="security_settings.html" class="p-2 -ml-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+            <h2 class="text-lg font-bold leading-tight tracking-tight">Export Recovery Phrase</h2>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto p-6 pb-safe">
+        <div class="w-full max-w-[480px] mx-auto flex flex-col">
+            
+            <!-- Warning Banner -->
+            <div class="mb-6 p-4 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
+                <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 shrink-0" style="font-size: 22px;">warning</span>
+                    <div>
+                        <h3 class="font-semibold text-amber-800 dark:text-amber-300 text-sm mb-1">Keep it secret, keep it safe</h3>
+                        <p class="text-amber-700 dark:text-amber-400 text-xs leading-relaxed">
+                            Never share your recovery phrase. Anyone with this phrase can access your wallet and funds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="mb-6">
+                <h1 class="text-xl font-bold tracking-tight mb-2">Your Secret Recovery Phrase</h1>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Write down these 12 words in order and store them in a safe place. This is the only way to recover your wallet.
+                </p>
+            </div>
+
+            <!-- Recovery Phrase Grid -->
+            <div class="bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-4 mb-6 shadow-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">1</span>
+                        <span class="text-sm font-medium">galaxy</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">2</span>
+                        <span class="text-sm font-medium">ocean</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">3</span>
+                        <span class="text-sm font-medium">bright</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">4</span>
+                        <span class="text-sm font-medium">swift</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">5</span>
+                        <span class="text-sm font-medium">planet</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">6</span>
+                        <span class="text-sm font-medium">lunar</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">7</span>
+                        <span class="text-sm font-medium">bridge</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">8</span>
+                        <span class="text-sm font-medium">crystal</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">9</span>
+                        <span class="text-sm font-medium">meadow</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">10</span>
+                        <span class="text-sm font-medium">thunder</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">11</span>
+                        <span class="text-sm font-medium">velvet</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800 rounded-lg p-3">
+                        <span class="text-xs text-slate-400 font-medium w-4">12</span>
+                        <span class="text-sm font-medium">anchor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col gap-3">
+                <button class="w-full h-12 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-semibold rounded-xl transition-colors border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2 shadow-sm">
+                    <span class="material-symbols-outlined" style="font-size: 20px;">content_copy</span>
+                    <span>Copy to Clipboard</span>
+                </button>
+                <a href="security_settings.html" class="w-full h-12 bg-primary hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined" style="font-size: 20px;">check</span>
+                    <span>I've Saved It</span>
+                </a>
+            </div>
+
+            <!-- Security Tips -->
+            <div class="mt-6 space-y-3">
+                <h3 class="text-sm font-semibold text-slate-700 dark:text-slate-300">Security Tips</h3>
+                <div class="flex items-start gap-3 text-xs text-slate-500 dark:text-slate-400">
+                    <span class="material-symbols-outlined text-red-500 shrink-0" style="font-size: 16px;">close</span>
+                    <span>Never take a screenshot of your recovery phrase</span>
+                </div>
+                <div class="flex items-start gap-3 text-xs text-slate-500 dark:text-slate-400">
+                    <span class="material-symbols-outlined text-red-500 shrink-0" style="font-size: 16px;">close</span>
+                    <span>Never share it with anyone, including Payrium support</span>
+                </div>
+                <div class="flex items-start gap-3 text-xs text-slate-500 dark:text-slate-400">
+                    <span class="material-symbols-outlined text-green-500 shrink-0" style="font-size: 16px;">check</span>
+                    <span>Write it down on paper and store in a secure location</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

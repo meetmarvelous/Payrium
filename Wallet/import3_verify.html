@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Payrium - Verify Import</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1a2233",
+                    },
+                    fontFamily: { "display": ["Inter", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        @supports (height: 100dvh) { .h-screen-safe { height: 100dvh !important; } }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    </style>
+</head>
+
+<body class="flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden h-screen-safe">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark px-4 py-4">
+        <div class="flex items-center gap-3">
+            <a href="import2 input phrase.html" class="p-2 -ml-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+            <div class="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+            </div>
+            <h2 class="text-lg font-bold leading-tight tracking-tight">Payrium</h2>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center p-6">
+        <div class="w-full max-w-[480px] flex flex-col items-center">
+
+            <!-- Step Indicator -->
+            <div class="mb-6">
+                <span class="inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-400">
+                    Step 3 of 4
+                </span>
+            </div>
+
+            <!-- Icon -->
+            <div class="mb-6">
+                <div class="size-20 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary" style="font-size: 36px;">verified</span>
+                </div>
+            </div>
+
+            <!-- Title & Description -->
+            <div class="text-center mb-8">
+                <h1 class="text-2xl font-bold tracking-tight mb-2">Confirm Your Phrase</h1>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Select the correct word for each position to verify your recovery phrase.
+                </p>
+            </div>
+
+            <!-- Verification Challenge -->
+            <div class="w-full bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-5 mb-6">
+                
+                <!-- Word 1 -->
+                <div class="mb-6">
+                    <label class="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3 block">
+                        Select word #3
+                    </label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            ocean
+                        </button>
+                        <button class="h-11 rounded-xl bg-primary text-white border border-primary text-sm font-medium shadow-lg shadow-primary/20">
+                            bright
+                        </button>
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            galaxy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Word 2 -->
+                <div class="mb-6">
+                    <label class="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3 block">
+                        Select word #7
+                    </label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            bridge
+                        </button>
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            crystal
+                        </button>
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            lunar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Word 3 -->
+                <div>
+                    <label class="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3 block">
+                        Select word #10
+                    </label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            meadow
+                        </button>
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            velvet
+                        </button>
+                        <button class="h-11 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-medium hover:border-primary hover:bg-primary/5 transition-all">
+                            thunder
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="w-full flex flex-col gap-3">
+                <a href="create_pin.html" class="w-full h-12 bg-primary hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                    <span>Continue</span>
+                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+                </a>
+            </div>
+
+            <!-- Security Note -->
+            <p class="mt-6 text-xs text-slate-400 dark:text-slate-500 text-center flex items-center gap-1.5">
+                <span class="material-symbols-outlined" style="font-size: 14px;">info</span>
+                This ensures you've correctly saved your recovery phrase.
+            </p>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

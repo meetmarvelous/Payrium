@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Payrium - Proposal Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d59f2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1a2233",
+                    },
+                    fontFamily: { "display": ["Inter", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        @supports (height: 100dvh) { .h-screen-safe { height: 100dvh !important; } }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen h-screen-safe overflow-hidden">
+
+    <div class="flex h-screen w-full">
+
+        <!-- Side Navigation (Desktop) -->
+        <aside class="hidden md:flex flex-col w-64 bg-white dark:bg-surface-dark border-r border-slate-200 dark:border-slate-800 h-full justify-between shrink-0">
+            <div class="flex flex-col gap-6 p-4">
+                <div class="flex items-center gap-3 px-2">
+                    <div class="bg-gradient-to-br from-primary to-blue-600 rounded-xl size-10 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
+                        <span class="material-symbols-outlined" style="font-size: 22px; font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-slate-900 dark:text-white text-base font-bold">Payrium</h1>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs">Simple Payments on BSC</p>
+                    </div>
+                </div>
+                <nav class="flex flex-col gap-1">
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="../Dashboard/Dashboard MO.html">
+                        <span class="material-symbols-outlined text-slate-500 group-hover:text-primary">dashboard</span>
+                        <p class="text-sm font-medium">Dashboard</p>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="../Dashboard/activity.html">
+                        <span class="material-symbols-outlined text-slate-500 group-hover:text-primary">receipt_long</span>
+                        <p class="text-sm font-medium">Activity</p>
+                    </a>
+                    <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-medium" href="dao_governance.html">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">how_to_vote</span>
+                        <p class="text-sm">DAO</p>
+                    </a>
+                    <div class="pt-4 mt-2 border-t border-slate-100 dark:border-slate-800">
+                        <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" href="../Settings/settings_home.html">
+                            <span class="material-symbols-outlined text-slate-500 group-hover:text-primary">settings</span>
+                            <p class="text-sm font-medium">Settings</p>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="p-4 border-t border-slate-200 dark:border-slate-800">
+                <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer transition-colors">
+                    <div class="bg-gradient-to-br from-slate-400 to-slate-500 rounded-full size-9 flex items-center justify-center text-white text-sm font-bold">U</div>
+                    <div class="flex flex-col overflow-hidden">
+                        <p class="text-slate-900 dark:text-white text-sm font-medium truncate">User Wallet</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs truncate">0x71C...9E3F</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col h-full overflow-hidden">
+            
+            <!-- Header -->
+            <header class="flex items-center justify-between px-4 py-4 bg-white dark:bg-surface-dark border-b border-slate-200 dark:border-slate-800">
+                <div class="flex items-center gap-3">
+                    <a href="dao_governance.html" class="p-2 -ml-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors md:hidden">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </a>
+                    <h2 class="text-lg font-bold">Proposal Details</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold">Active</span>
+                </div>
+            </header>
+
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto pb-24 md:pb-8">
+                <div class="max-w-2xl mx-auto p-4 sm:p-6 space-y-6">
+                    
+                    <!-- Proposal Title Card -->
+                    <div class="bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-5">
+                        <div class="flex items-start gap-4">
+                            <div class="size-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined" style="font-size: 24px;">how_to_vote</span>
+                            </div>
+                            <div class="flex-1">
+                                <h1 class="text-xl font-bold mb-2">Increase Staking Rewards to 8% APY</h1>
+                                <div class="flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+                                    <span class="flex items-center gap-1">
+                                        <span class="material-symbols-outlined" style="font-size: 16px;">person</span>
+                                        0x7A3...F2B1
+                                    </span>
+                                    <span class="flex items-center gap-1">
+                                        <span class="material-symbols-outlined" style="font-size: 16px;">schedule</span>
+                                        2 days left
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Voting Progress -->
+                    <div class="bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-5">
+                        <h3 class="text-sm font-semibold mb-4">Current Votes</h3>
+                        <div class="space-y-4">
+                            <!-- For -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-1.5">
+                                    <span class="font-medium text-green-600 dark:text-green-400 flex items-center gap-1">
+                                        <span class="material-symbols-outlined" style="font-size: 16px;">thumb_up</span> For
+                                    </span>
+                                    <span class="font-semibold">67.3%</span>
+                                </div>
+                                <div class="h-3 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                                    <div class="h-full bg-green-500 rounded-full" style="width: 67.3%;"></div>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-1">1,245,000 PUM</p>
+                            </div>
+                            <!-- Against -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-1.5">
+                                    <span class="font-medium text-red-600 dark:text-red-400 flex items-center gap-1">
+                                        <span class="material-symbols-outlined" style="font-size: 16px;">thumb_down</span> Against
+                                    </span>
+                                    <span class="font-semibold">32.7%</span>
+                                </div>
+                                <div class="h-3 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                                    <div class="h-full bg-red-500 rounded-full" style="width: 32.7%;"></div>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-1">605,000 PUM</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-between text-xs text-slate-500">
+                            <span>Total votes: 1,850,000 PUM</span>
+                            <span>Quorum: 1,500,000 PUM ✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="bg-white dark:bg-surface-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-5">
+                        <h3 class="text-sm font-semibold mb-3">Description</h3>
+                        <div class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed space-y-3">
+                            <p>This proposal aims to increase the staking rewards for PUM token holders from the current 4.5% APY to 8% APY.</p>
+                            <p>The increased rewards will help attract more long-term holders and strengthen the ecosystem's decentralization.</p>
+                            <p><strong>Key Changes:</strong></p>
+                            <ul class="list-disc list-inside space-y-1 ml-2">
+                                <li>Increase base staking APY from 4.5% to 8%</li>
+                                <li>Allocate additional tokens from treasury reserve</li>
+                                <li>Review impact after 6 months</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Your Voting Power -->
+                    <div class="bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-5 text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm font-semibold opacity-90">Your Voting Power</h3>
+                            <span class="material-symbols-outlined" style="font-size: 20px;">token</span>
+                        </div>
+                        <p class="text-2xl font-bold mb-1">5,000 PUM</p>
+                        <p class="text-sm opacity-80">= 5,000 votes</p>
+                    </div>
+
+                    <!-- Vote Buttons -->
+                    <div class="flex gap-3">
+                        <a href="vote_confirm.html" class="flex-1 h-14 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-600/20">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">thumb_up</span>
+                            <span>Vote For</span>
+                        </a>
+                        <a href="vote_confirm.html" class="flex-1 h-14 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-xl transition-colors flex items-center justify-center gap-2 shadow-lg shadow-red-600/20">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">thumb_down</span>
+                            <span>Vote Against</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Navigation (Mobile) -->
+            <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800 px-6 py-3 pb-safe flex justify-between items-center z-50">
+                <a href="../Dashboard/Dashboard MO.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
+                    <span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
+                    <span class="text-[10px] font-medium">Dashboard</span>
+                </a>
+                <a href="../Dashboard/activity.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
+                    <span class="material-symbols-outlined group-hover:scale-110 transition-transform">receipt_long</span>
+                    <span class="text-[10px] font-medium">Activity</span>
+                </a>
+                <a href="dao_governance.html" class="flex flex-col items-center gap-1 text-primary w-14 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full"></div>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">how_to_vote</span>
+                    <span class="text-[10px] font-bold">DAO</span>
+                </a>
+                <a href="../Settings/settings_home.html" class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors group w-14">
+                    <span class="material-symbols-outlined group-hover:scale-110 transition-transform">settings</span>
+                    <span class="text-[10px] font-medium">Settings</span>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
